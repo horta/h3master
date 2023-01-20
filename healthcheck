@@ -1,0 +1,4 @@
+#!/bin/sh
+
+/usr/bin/test $(/bin/netstat -ltn | /bin/grep -c ":51371 ") -eq 1
+/usr/bin/test $(/bin/netstat -ltn | /bin/grep -c ":51372 ") -eq 1
